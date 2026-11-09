@@ -1,0 +1,233 @@
+[
+ {
+  "key": "kenpo",
+  "title": "勤務先への連絡（健康保険の資格喪失）",
+  "rule": "勤務先が5日以内に手続き",
+  "kind": "info",
+  "where": "亡くなった方の勤務先",
+  "src": [
+   "日本年金機構（資格喪失届）|https://www.nenkin.go.jp/service/kounen/tekiyo/hihokensha1/20150407-02.html"
+  ],
+  "ex_due": "2026-10-05",
+  "ex_date": "2026-10-05",
+  "category": ""
+ },
+ {
+  "key": "shibou",
+  "title": "死亡届の提出（火葬の許可もあわせて）",
+  "rule": "死亡を知った日から7日以内（その日を含めて数える）",
+  "kind": "shibou",
+  "where": "亡くなった場所・本籍地・届出人の住所地の市区町村役場",
+  "src": [
+   "戸籍法86条（7日以内）・43条（初日を含めて数える）|https://laws.e-gov.go.jp/law/322AC0000000224"
+  ],
+  "ex_due": "2026-10-07",
+  "ex_date": "2026-10-07",
+  "category": ""
+ },
+ {
+  "key": "nenkin",
+  "title": "年金を止める手続き（受給権者死亡届）",
+  "rule": "厚生年金は10日以内・国民年金は14日以内（ここでは安全のため1日早く表示）",
+  "kind": "gov",
+  "where": "厚生年金：年金事務所・街角の年金相談センター／国民年金だけの方：市区町村役場",
+  "src": [
+   "厚生年金保険法98条（10日以内）|https://laws.e-gov.go.jp/law/329AC0000000115",
+   "国民年金法105条（14日以内）|https://laws.e-gov.go.jp/law/334AC0000000141",
+   "日本年金機構|https://www.nenkin.go.jp/service/jukyu/tetsuduki/kyotsu/jukyu/20140731-01.html"
+  ],
+  "ex_due": "2026-10-10",
+  "ex_date": "2026-10-13",
+  "category": "年金の種類が分からないとき（早い方の10日に合わせる）"
+ },
+ {
+  "key": "kokuho",
+  "title": "国民健康保険・介護保険の資格喪失",
+  "rule": "14日以内（ここでは安全のため1日早く表示）",
+  "kind": "gov",
+  "where": "市区町村役場",
+  "src": [
+   "介護保険法施行規則32条（14日以内）|https://laws.e-gov.go.jp/law/411M50000100036"
+  ],
+  "ex_due": "2026-10-14",
+  "ex_date": "2026-10-14",
+  "category": ""
+ },
+ {
+  "key": "setai",
+  "title": "世帯主の変更届",
+  "rule": "14日以内（ここでは安全のため1日早く表示）",
+  "kind": "gov",
+  "where": "市区町村役場",
+  "src": [
+   "住民基本台帳法25条（14日以内）|https://laws.e-gov.go.jp/law/342AC0000000081"
+  ],
+  "ex_due": "2026-10-14",
+  "ex_date": "2026-10-14",
+  "category": ""
+ },
+ {
+  "key": "houki",
+  "title": "相続放棄・限定承認をするかの判断（熟慮期間）",
+  "rule": "相続が始まったことを知った時から3か月以内",
+  "kind": "civil",
+  "where": "亡くなった方の最後の住所地の家庭裁判所",
+  "src": [
+   "民法915条（3か月以内）|https://laws.e-gov.go.jp/law/129AC0000000089",
+   "裁判所：相続の放棄の申述|https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_13/index.html",
+   "裁判所：期間の伸長|https://www.courts.go.jp/saiban/syurui/syurui_kazi/kazi_06_25/index.html"
+  ],
+  "ex_due": "2027-01-01",
+  "ex_date": "2026-12-28",
+  "category": ""
+ },
+ {
+  "key": "junkakutei",
+  "title": "準確定申告（亡くなった方の所得税の申告・納付）",
+  "rule": "相続の開始を知った日の翌日から4か月以内",
+  "kind": "tax",
+  "where": "亡くなった方の住所地の税務署",
+  "src": [
+   "所得税法124・125条（4か月以内）|https://laws.e-gov.go.jp/law/340AC0000000033",
+   "国税庁 No.2022|https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2022.htm"
+  ],
+  "ex_due": "2027-02-01",
+  "ex_date": "2027-02-01",
+  "category": ""
+ },
+ {
+  "key": "souzokuzei",
+  "title": "相続税の申告・納付",
+  "rule": "相続の開始を知った日の翌日から10か月以内",
+  "kind": "tax",
+  "where": "亡くなった方の住所地の税務署",
+  "src": [
+   "相続税法27・33条（10か月以内）|https://laws.e-gov.go.jp/law/325AC0000000073",
+   "国税庁 No.4205|https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4205.htm"
+  ],
+  "ex_due": "2027-08-01",
+  "ex_date": "2027-08-02",
+  "category": ""
+ },
+ {
+  "key": "iryubun",
+  "title": "遺留分（最低限の取り分）を求める期限",
+  "rule": "侵害を知った時から1年（相続開始から10年）",
+  "kind": "civil",
+  "where": "相手方（多くは弁護士に相談）",
+  "src": [
+   "民法1048条|https://laws.e-gov.go.jp/law/129AC0000000089"
+  ],
+  "ex_due": "2027-10-01",
+  "ex_date": "2027-10-01",
+  "category": ""
+ },
+ {
+  "key": "sousaihi",
+  "title": "葬祭費の請求（国民健康保険）",
+  "rule": "葬儀を行った日の翌日から2年",
+  "kind": "info",
+  "where": "市区町村役場",
+  "src": [
+   "国民健康保険法58条・110条|https://laws.e-gov.go.jp/law/333AC0000000192"
+  ],
+  "ex_due": "2028-10-01",
+  "ex_date": "2028-10-01",
+  "category": ""
+ },
+ {
+  "key": "maisou",
+  "title": "埋葬料の請求（会社の健康保険）",
+  "rule": "亡くなった日の翌日から2年",
+  "kind": "info",
+  "where": "勤務先の健康保険（協会けんぽ・健康保険組合）",
+  "src": [
+   "健康保険法100条・193条|https://laws.e-gov.go.jp/law/211AC0000000070",
+   "協会けんぽ|https://www.kyoukaikenpo.or.jp/application_form/benefit/012/index.html"
+  ],
+  "ex_due": "2028-10-01",
+  "ex_date": "2028-10-01",
+  "category": ""
+ },
+ {
+  "key": "touki",
+  "title": "相続登記（不動産の名義変更）の申請",
+  "rule": "取得を知った日から3年以内",
+  "kind": "gov",
+  "where": "不動産の所在地を管轄する法務局",
+  "src": [
+   "不動産登記法76条の2（3年以内）|https://laws.e-gov.go.jp/law/416AC0000000123",
+   "法務省：相続登記の申請義務化|https://www.moj.go.jp/MINJI/minji05_00565.html"
+  ],
+  "ex_due": "2029-10-01",
+  "ex_date": "2029-10-01",
+  "category": "2024年4月1日以後に相続を知ったとき"
+ },
+ {
+  "key": "hoken",
+  "title": "生命保険の死亡保険金の請求",
+  "rule": "3年（約款による）",
+  "kind": "info",
+  "where": "加入している保険会社",
+  "src": [
+   "保険法95条（3年）|https://laws.e-gov.go.jp/law/420AC0000000056"
+  ],
+  "ex_due": "2029-10-01",
+  "ex_date": "2029-10-01",
+  "category": ""
+ },
+ {
+  "key": "izoku",
+  "title": "遺族年金の請求",
+  "rule": "5年",
+  "kind": "info",
+  "where": "年金事務所・市区町村役場",
+  "src": [
+   "国民年金法102条・厚生年金保険法92条（5年）|https://www.nenkin.go.jp/service/jukyu/seido/kyotsu/shikyu/20140421-01.html"
+  ],
+  "ex_due": "2031-10-01",
+  "ex_date": "2031-10-01",
+  "category": ""
+ },
+ {
+  "key": "nenkin-k",
+  "title": "年金を止める手続き（厚生年金の受給権者死亡届）",
+  "rule": "10日以内（ここでは安全のため1日早く表示）",
+  "kind": "gov",
+  "where": "年金事務所・街角の年金相談センター",
+  "src": [
+   "厚生年金保険法98条（10日以内）|https://laws.e-gov.go.jp/law/329AC0000000115",
+   "日本年金機構|https://www.nenkin.go.jp/service/jukyu/tetsuduki/kyotsu/jukyu/20140731-01.html"
+  ],
+  "ex_due": "2026-10-10",
+  "ex_date": "2026-10-13",
+  "category": "厚生年金を受けていたとき"
+ },
+ {
+  "key": "nenkin-n",
+  "title": "年金を止める手続き（国民年金の受給権者死亡届）",
+  "rule": "14日以内（ここでは安全のため1日早く表示）",
+  "kind": "gov",
+  "where": "市区町村役場・年金事務所",
+  "src": [
+   "国民年金法105条（14日以内）|https://laws.e-gov.go.jp/law/334AC0000000141"
+  ],
+  "ex_due": "2026-10-14",
+  "ex_date": "2026-10-14",
+  "category": "国民年金だけを受けていたとき"
+ },
+ {
+  "key": "touki",
+  "title": "相続登記（不動産の名義変更）の申請",
+  "rule": "2024年4月1日より前に相続を知った場合は2027年3月31日まで",
+  "kind": "gov",
+  "where": "不動産の所在地を管轄する法務局",
+  "src": [
+   "不動産登記法76条の2（3年以内）|https://laws.e-gov.go.jp/law/416AC0000000123",
+   "法務省：相続登記の申請義務化|https://www.moj.go.jp/MINJI/minji05_00565.html"
+  ],
+  "ex_due": "",
+  "ex_date": "",
+  "category": "2024年4月1日より前に相続を知ったとき"
+ }
+]

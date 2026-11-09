@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "このデータ・プログラムを使うときは、次のとおり出典を表示してください。"
+title: "テマゼロAI・相続のこよみ オープンデータ"
+authors:
+  - name: "株式会社ブライトアセット"
+date-released: "2026-11-09"
+url: "https://temazeroai.com/data/"
+license: "CC-BY-4.0"
+keywords:
+  - 源泉徴収税額表
+  - 祝日
+  - 相続
+  - 期限

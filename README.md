@@ -1,0 +1,29 @@
+# テマゼロAI・相続のこよみ オープンデータ
+
+株式会社ブライトアセットが運営する2つのサイト（[テマゼロAI](https://temazeroai.com/)・[相続のこよみ](https://souzoku-koyomi.com/)）のツールが使っている表と、相続の期限計算のプログラムです。サイトのツールと同じ値・同じ計算です。
+
+## データ（data/）
+
+| ファイル | 内容 | 出典 | サイトのページ |
+|---|---|---|---|
+| gensen-getsugaku.csv | 給与所得の源泉徴収税額表（月額表）令和8年分・令和9年分。社会保険料等控除後の給与等の金額 740,000円未満の行の甲欄（扶養親族等0〜7人）・乙欄の税額 | 国税庁「給与所得の源泉徴収税額表」（加工して作成） | https://temazeroai.com/data/gensen-getsugaku |
+| shukujitsu.csv | 国民の祝日・休日 2026年・2027年（日付・曜日・名称） | 内閣府「国民の祝日について」（加工して作成）。内閣府の syukujitsu.csv と日付を照合済み（2026-11-09） | https://temazeroai.com/data/shukujitsu |
+| kigen.csv / kigen.json | 相続の手続きの期限ルール（期限の決まり・休日の扱い・窓口・根拠の条文と公式ページ・計算例） | 相続のこよみ（各行の根拠リンクを参照） | https://souzoku-koyomi.com/data/kigen |
+
+- 文字コードは UTF-8（BOM付き）です。Excel でそのまま開けます。
+- 値の正式な確認は、必ず出典の公式資料で行ってください。計算結果は目安です。
+
+## プログラム（code/・test/）
+
+- code/kigen.js：亡くなった日・知った日から、相続の手続きの期限日を計算します（民法143条の応当日、閉庁日の扱い、祝日の判定）。ブラウザでも Node.js（`require`）でも動きます。
+- test/test_kigen.js：国税庁の例などを使った検算です。`node test/test_kigen.js` で実行できます。
+
+## ライセンス
+
+- データ（data/）：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.ja)。使うときは「出典：テマゼロAI／相続のこよみ（株式会社ブライトアセット）」と、各データの元の出典（国税庁・内閣府）を表示してください。詳しくは LICENSE-DATA.md。
+- プログラム（code/・test/）：MIT License（LICENSE）。
+
+## 運営
+
+株式会社ブライトアセット（法人番号 7011001114946・広島県福山市川口町4-4-38）
+誤りに気づかれた場合は https://temazeroai.com/about#contact からお知らせください。
